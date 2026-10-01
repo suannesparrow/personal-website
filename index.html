@@ -3,101 +3,120 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f3f1e9" />
-    <meta name="description" content="Suanne Sparrow is a UBC Manufacturing Engineering graduate working across embedded systems, controls, and manufacturing." />
-    <meta property="og:title" content="Suanne Sparrow — Engineering portfolio" />
-    <meta property="og:description" content="Selected engineering projects, experience, and skills." />
+    <meta name="theme-color" content="#fff9fa" />
+    <meta name="description" content="Suanne Sparrow is a UBC Manufacturing Engineering graduate working across embedded systems, controls, manufacturing, and physical systems." />
+    <meta property="og:title" content="Suanne Sparrow | Mechatronics Engineer" />
+    <meta property="og:description" content="Engineering projects across embedded systems, controls, manufacturing, and instrumentation." />
     <meta property="og:type" content="website" />
-    <title>Suanne Sparrow — Engineering portfolio</title>
+    <meta property="og:image" content="assets/shm-sensor-module.jpg" />
+    <title>Suanne Sparrow | Mechatronics Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Suanne Sparrow home">SS<span>.</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact" class="nav-cta">Contact <span aria-hidden="true">↗</span></a>
+      <a class="wordmark" href="#home" aria-label="Suanne Sparrow home">SUANNE SPARROW<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Main navigation">
+        <a href="#about" data-nav="about">ABOUT</a>
+        <a href="#skills" data-nav="skills">SKILLS</a>
+        <a href="#projects" data-nav="projects">PROJECTS</a>
+        <a href="#experience" data-nav="experience">EXPERIENCE</a>
+        <a href="#contact" data-nav="contact">CONTACT</a>
+        <a class="nav-resume" href="assets/documents/Suanne_Sparrow_UBC_Resume.pdf" target="_blank" rel="noreferrer">RÉSUMÉ <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
+      <section class="hero section-anchor" id="home" data-section="home" aria-labelledby="hero-title">
+        <div class="hero-grid"></div>
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> MANUFACTURING ENGINEERING · UBC ’26</p>
-          <h1 id="hero-title">I build systems<br />that make ideas<br /><em>work in the real world.</em></h1>
-          <p class="hero-intro">From embedded sensing and process control to CNC manufacturing, I like turning complex engineering problems into systems you can test, understand, and improve.</p>
-          <div class="hero-actions"><a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↓</span></a><a class="quiet-link" href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a></div>
+          <p class="eyebrow"><span class="status-dot"></span> VANCOUVER, BC <span class="eyebrow-sep">/</span> UBC ’26</p>
+          <h1 id="hero-title">Suanne<br />Sparrow<span class="hero-period">.</span></h1>
+          <p class="hero-role">Mechatronics Engineer</p>
+          <p class="hero-summary">Manufacturing Engineering graduate working across embedded systems, controls, manufacturing, and physical systems.</p>
+          <p class="hero-education">B.A.Sc. Manufacturing Engineering <span>·</span> University of British Columbia <span>·</span> 2026</p>
+          <div class="hero-actions"><a class="button button-pink" href="mailto:suannesparrow@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="button button-outline" href="https://www.linkedin.com/in/suanne-sparrow-840819260/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
         </div>
-        <div class="hero-visual" aria-label="Embedded sensor prototype and engineering sketch">
-          <div class="visual-grid"></div>
-          <div class="hero-photo-wrap"><img src="assets/shm-sensor-module.jpg" alt="Prototype sensor node assembled on a perfboard with an ESP32 and MEMS sensor modules" fetchpriority="high" /></div>
-          <div class="visual-tag"><span>01 / 05</span><span>MEASURE → UNDERSTAND → IMPROVE</span></div>
-          <span class="visual-cross cross-one" aria-hidden="true">+</span><span class="visual-cross cross-two" aria-hidden="true">+</span>
+        <div class="hero-art" aria-label="Engineering portfolio highlights">
+          <div class="art-label">ENGINEERING / SELECTED EVIDENCE</div>
+          <div class="art-ring ring-a"></div><div class="art-ring ring-b"></div>
+          <div class="art-core"><span>99.83</span><small>%</small><i>DATA INTEGRITY<br />24-HOUR TEST</i></div>
+          <div class="art-coordinate coord-a">49°15′ N</div><div class="art-coordinate coord-b">SYSTEMS / 2026</div>
+          <span class="art-cross cross-a" aria-hidden="true">+</span><span class="art-cross cross-b" aria-hidden="true">+</span>
+          <div class="art-index">01 — 04</div>
         </div>
-        <div class="hero-bottomline"><span>VANCOUVER, BC</span><span>EMBEDDED SYSTEMS · CONTROLS · MANUFACTURING</span><a href="#work" aria-label="Scroll to selected work">SCROLL TO EXPLORE ↓</a></div>
+        <div class="hero-bottom"><span>EMBEDDED SYSTEMS</span><span>CONTROLS</span><span>MANUFACTURING</span><span>INSTRUMENTATION</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
       </section>
 
-      <section class="proof-strip" aria-label="Selected project outcomes">
-        <div><strong>99.83<span>%</span></strong><span>DATA INTEGRITY · 24-HOUR TEST</span></div>
-        <div><strong>±0.05<span> mm</span></strong><span>VERIFIED MACHINING TOLERANCE</span></div>
-        <div><strong>15<span>%</span></strong><span>RC VEHICLE WEIGHT REDUCTION</span></div>
-        <p>Evidence from selected academic and team projects.</p>
+      <section class="about section-anchor" id="about" data-section="about" aria-labelledby="about-title">
+        <div class="section-topline"><p class="section-kicker">01 / A LITTLE CONTEXT</p><span>ABOUT ME</span></div>
+        <div class="about-grid">
+          <div class="about-copy"><h2 id="about-title">I like working where<br />the <em>physical and digital</em><br />meet.</h2><p>I’m a recent Manufacturing Engineering graduate from UBC. My projects have taken me from embedded sensor firmware and district-energy controls to CNC process planning and instrumentation.</p><p>I enjoy understanding how the whole system behaves: what the hardware measures, how the software handles it, how an operator reads it, and whether the design can be built and tested.</p></div>
+          <div class="photo-reserved" role="img" aria-label="Personal photo area intentionally left empty for a future update"><span class="photo-corner corner-tl"></span><span class="photo-corner corner-tr"></span><span class="photo-corner corner-bl"></span><span class="photo-corner corner-br"></span><span class="photo-label">PERSONAL PHOTOS</span><span class="photo-note">Reserved for a future update</span></div>
+        </div>
+        <div class="toolkit section-anchor" id="skills" data-section="skills" aria-labelledby="skills-title">
+          <div class="toolkit-heading"><div><p class="section-kicker">02 / TECHNICAL SKILLS</p><h2 id="skills-title">Technical <em>toolkit</em></h2></div><p>Tools and methods, tied to the work they support.</p></div>
+          <div class="toolkit-grid">
+            <div class="toolkit-group"><span class="toolkit-number">01</span><h3>Embedded systems</h3><div class="skill-tags"><span title="Used in the wind turbine monitoring capstone">C</span><span title="Used in the wind turbine monitoring capstone">ESP32</span><span title="Used in the wind turbine monitoring capstone">FreeRTOS</span><span>SPI</span><span>I²C</span><span>Ethernet</span><span>MQTT</span><span>ESP-IDF</span></div></div>
+            <div class="toolkit-group"><span class="toolkit-number">02</span><h3>Controls & automation</h3><div class="skill-tags"><span title="Used in the district-energy digital twin">DeltaV DCS</span><span>PID tuning</span><span>HMI</span><span>ISA-101</span><span>PLC ladder logic</span></div></div>
+            <div class="toolkit-group"><span class="toolkit-number">03</span><h3>Mechanical & manufacturing</h3><div class="skill-tags"><span title="Used in the keyboard chassis CAM project">Siemens NX</span><span>CAM</span><span>5-axis CNC</span><span>DFM</span><span>Fixturing</span><span>SOLIDWORKS</span></div></div>
+            <div class="toolkit-group"><span class="toolkit-number">04</span><h3>Engineering & simulation</h3><div class="skill-tags"><span>MATLAB</span><span>Simulink</span><span>Ansys</span><span>Git / GitHub</span><span>Python</span><span>C#</span><span>ARM Assembly</span><span>R</span></div></div>
+            <div class="toolkit-group"><span class="toolkit-number">05</span><h3>Hardware & lab</h3><div class="skill-tags"><span>Arduino</span><span>Oscilloscope</span><span>Multimeter</span><span>Function generator</span></div></div>
+            <div class="toolkit-group toolkit-languages"><span class="toolkit-number">06</span><h3>Languages</h3><div class="skill-tags"><span>English · Native</span><span>Mandarin Chinese · Native</span></div></div>
+          </div>
+        </div>
       </section>
 
-      <section class="work section-wrap" id="work" aria-labelledby="work-title">
-        <div class="section-heading"><div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Projects built<br /><em>to be understood.</em></h2></div><p class="section-note">A selection across embedded systems,<br />controls, and manufacturing.</p></div>
+      <section class="projects section-anchor" id="projects" data-section="projects" aria-labelledby="projects-title">
+        <div class="section-topline"><p class="section-kicker">03 / SELECTED ENGINEERING WORK</p><span>PROJECTS</span></div>
+        <div class="projects-heading"><h2 id="projects-title">Built, tested,<br /><em>learned from.</em></h2><p>Selected work across embedded systems, controls, manufacturing, and instrumentation.</p></div>
+        <article class="project-card project-featured">
+          <div class="featured-image"><img src="assets/shm-sensor-module.jpg" alt="ESP32 sensor-node prototype assembled with MEMS sensor modules on a perfboard" loading="lazy" /><span class="image-mark">CAPSTONE · 1ST PLACE</span><span class="image-count">01 / 04</span></div>
+          <div class="project-content"><div class="project-meta"><span>EMBEDDED SYSTEMS / FIRMWARE / IOT</span><span>2025—26</span></div><h3>Wind Turbine Structural<br />Health Monitoring</h3><p>A low-cost monitoring prototype combining MEMS sensors, real-time acquisition, Ethernet, and remote data visualization.</p><div class="project-tags"><span>ESP32</span><span>C</span><span>FreeRTOS</span><span>Ethernet</span><span>MQTT</span></div><div class="project-result"><strong>99.83%</strong><span>data integrity over a 24-hour validation run</span></div><button class="project-open" type="button" data-open-project="project-wind">View project <span aria-hidden="true">↗</span></button></div>
+        </article>
         <div class="project-grid">
-          <a class="project-card project-featured" href="projects/wind-turbine-monitoring/index.html">
-            <div class="project-image project-image-wind"><img src="assets/shm-sensor-module.jpg" alt="" loading="lazy" /><span class="image-index">CAPSTONE · 1ST PLACE</span></div>
-            <div class="project-meta"><span>01 / EMBEDDED SYSTEMS</span><span>2025—26</span></div>
-            <h3>Wind turbine<br />health monitoring</h3><p>Low-cost sensing, reliable acquisition, and IoT networking for structural health monitoring.</p>
-            <div class="project-tags"><span>C</span><span>ESP32</span><span>FreeRTOS</span><span>MQTT</span></div><span class="card-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="project-card" href="projects/district-energy-digital-twin/index.html">
-            <div class="project-image project-image-twin" aria-hidden="true"><div class="diagram-loop"><i></i><i></i><i></i><i></i><b>MODEL<br />↻<br />VALIDATE</b></div><span class="image-index">SYSTEMS ENGINEERING</span></div>
-            <div class="project-meta"><span>02 / CONTROLS</span><span>2024</span></div>
-            <h3>District energy<br />digital twin</h3><p>Process simulation and operator interface development for a multi-building energy system.</p>
-            <div class="project-tags"><span>DeltaV</span><span>HMI</span><span>PID</span></div><span class="card-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="project-card" href="projects/macbook-chassis/index.html">
-            <div class="project-image"><img src="assets/chassis-fixture-bottom.jpg" alt="" loading="lazy" /><span class="image-index">CAM · TWO SETUPS</span></div>
-            <div class="project-meta"><span>03 / MANUFACTURING</span><span>2025</span></div>
-            <h3>Keyboard chassis<br />CAM process</h3><p>Fixture strategy, 5-axis toolpaths, and DFM review for a thin-wall aluminum part.</p>
-            <div class="project-tags"><span>Siemens NX</span><span>5-axis CNC</span><span>DFM</span></div><span class="card-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="project-card" href="projects/rc-vehicle/index.html">
-            <div class="project-image project-image-vehicle" aria-hidden="true"><svg viewBox="0 0 640 300" role="presentation"><path d="M111 201h420l-24-58-92-14-66-54H229l-60 61-48 22z"/><path d="M198 129h139l-42-39h-56zM353 129h47l-43-39h-33z"/><circle cx="211" cy="209" r="43"/><circle cx="211" cy="209" r="17"/><circle cx="448" cy="209" r="43"/><circle cx="448" cy="209" r="17"/><path d="M114 172h70m259-39 51 10"/></svg><span class="image-index">MATERIALS · DFMA</span></div>
-            <div class="project-meta"><span>04 / PRODUCT DEVELOPMENT</span><span>2023—24</span></div>
-            <h3>RC vehicle<br />performance</h3><p>Composite chassis redesign, material testing, and process planning for a lighter vehicle.</p>
-            <div class="project-tags"><span>GFRP</span><span>FEA</span><span>RTM</span></div><span class="card-arrow" aria-hidden="true">↗</span>
-          </a>
+          <article class="project-card"><div class="project-image project-image-twin" aria-label="Illustrative process-model workflow, not an operational plant graphic"><div class="twin-cycle"><span>MODEL</span><i>↻</i><span>VALIDATE</span></div><span class="image-mark">SYSTEMS ENGINEERING</span><span class="image-count">02 / 04</span></div><div class="project-content"><div class="project-meta"><span>CONTROLS / SIMULATION</span><span>2024</span></div><h3>District Energy<br />Digital Twin</h3><p>Process simulation, operator-interface development, and control validation during a systems engineering internship.</p><div class="project-tags"><span>DeltaV</span><span>Controls</span><span>HMI</span><span>Simulation</span></div><div class="project-result"><strong>Pre-commissioning</strong><span>simulation surfaced a control-design issue</span></div><button class="project-open" type="button" data-open-project="project-twin">View project <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-image"><img src="assets/chassis-fixture-bottom.jpg" alt="NX model of the keyboard chassis held on a bottom-side vacuum fixture" loading="lazy" /><span class="image-mark">CAM · TWO SETUPS</span><span class="image-count">03 / 04</span></div><div class="project-content"><div class="project-meta"><span>MANUFACTURING / CAM</span><span>2025</span></div><h3>MacBook Pro<br />Keyboard Chassis</h3><p>Fixture strategy, 5-axis programming, and DFM review for a thin-wall aluminum chassis.</p><div class="project-tags"><span>Siemens NX</span><span>5-axis CNC</span><span>DFM</span></div><div class="project-result"><strong>±0.05 mm</strong><span>reported tolerance · 30 CAM operations</span></div><button class="project-open" type="button" data-open-project="project-chassis">View project <span aria-hidden="true">↗</span></button></div></article>
+          <article class="project-card"><div class="project-image"><img src="assets/scale-prototype.jpg" alt="Breadboard prototype of the strain-gauge scale instrumentation and offset amplifier" loading="lazy" /><span class="image-mark">INSTRUMENTATION</span><span class="image-count">04 / 04</span></div><div class="project-content"><div class="project-meta"><span>CIRCUIT DESIGN / DAQ</span><span>2024</span></div><h3>Precision Strain-Gauge<br />Weight Scale</h3><p>Analog signal conditioning from a load cell through calibrated MATLAB mass readout.</p><div class="project-tags"><span>Op-amp</span><span>Simulink</span><span>MATLAB</span><span>Arduino</span></div><div class="project-result"><strong>100 Hz</strong><span>DAQ loop · validated at 0 kg and 2 kg</span></div><button class="project-open" type="button" data-open-project="project-scale">View project <span aria-hidden="true">↗</span></button></div></article>
         </div>
-        <details class="more-projects"><summary><span>Also in the lab</span><span>Precision strain-gauge weight scale · 2024 <b aria-hidden="true">+</b></span></summary><div class="more-project-body"><img src="assets/scale-prototype.jpg" alt="Breadboard prototype of an instrumentation and offset amplifier circuit used for the strain-gauge weight scale" loading="lazy" /><div><p class="section-kicker">05 / INSTRUMENTATION</p><h3>Precision weight scale</h3><p>Designed and built an analog signal-conditioning chain for a strain gauge, verified the instrumentation-amplifier gain in Simulink, then calibrated a MATLAB data-acquisition readout at 0 kg and 2 kg.</p><p class="project-tags"><span>OP-AMP</span><span>SIMULINK</span><span>MATLAB · 100 HZ</span></p><a class="text-link" href="projects/strain-gauge-scale/index.html">View project details <span aria-hidden="true">↗</span></a></div></div></details>
+        <p class="project-disclaimer">The chassis project is an academic manufacturing project and is not affiliated with Apple.</p>
       </section>
 
-      <section class="experience section-wrap" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading"><div><p class="section-kicker">02 / EXPERIENCE</p><h2 id="experience-title">Where I’ve<br /><em>put it to work.</em></h2></div><p class="section-note">Engineering work across energy,<br />product development, and student teams.</p></div>
+      <section class="experience section-anchor" id="experience" data-section="experience" aria-labelledby="experience-title">
+        <div class="section-topline"><p class="section-kicker">04 / PROFESSIONAL HISTORY</p><span>EXPERIENCE</span></div>
+        <div class="experience-heading"><h2 id="experience-title">Experience</h2><p>Engineering work across energy systems, product development, and student teams.</p></div>
         <div class="timeline">
-          <article class="timeline-item"><div class="timeline-date">SEP—DEC 2024 <span>VANCOUVER, BC</span></div><div class="timeline-content"><h3>Systems Engineering Intern <span>· Creative Energy</span></h3><ul><li>Built a DeltaV process simulator and a four-level operator HMI for a district-energy system.</li><li>Supported PID tuning and closed-loop validation; simulation surfaced a pump recirculation issue before commissioning.</li></ul><a href="projects/district-energy-digital-twin/index.html" class="text-link">Related case study <span aria-hidden="true">↗</span></a></div></article>
-          <article class="timeline-item"><div class="timeline-date">MAY—AUG 2024 <span>TAICHUNG, TAIWAN</span></div><div class="timeline-content"><h3>Product Development Intern <span>· Amomii</span></h3><ul><li>Programmed and documented Arduino modules, improving deployment scalability by 25%.</li><li>Used English and Mandarin to coordinate project reviews and turn stakeholder feedback into integration priorities.</li></ul></div></article>
-          <article class="timeline-item"><div class="timeline-date">MAY—AUG 2023 <span>VANCOUVER, BC</span></div><div class="timeline-content"><h3>District Energy Engineering Intern <span>· Onni Group</span></h3><ul><li>Evaluated renewable and low-carbon district-energy and HVAC concepts for building design.</li><li>Coordinated mechanical requirements with developers, contractors, and consultants and supported performance validation.</li></ul></div></article>
-          <article class="timeline-item"><div class="timeline-date">JAN—SEP 2023 <span>VANCOUVER, BC</span></div><div class="timeline-content"><h3>Mechanical Team Member <span>· UBC Sustaingineering</span></h3><ul><li>Contributed to a five-person team building a small-scale wind turbine for energy-accessibility work.</li><li>Modeled structural components—including ribs, base, and shaft—in SOLIDWORKS.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-when"><span>2024</span><small>SEP—DEC</small></div><div class="timeline-role"><p class="timeline-company">CREATIVE ENERGY <span>VANCOUVER, BC</span></p><h3>Systems Engineering Intern</h3><ul><li>Built a DeltaV process simulator and a four-level operator HMI for a district-energy system.</li><li>Supported PID tuning and closed-loop validation; simulation surfaced a pump recirculation issue before commissioning.</li></ul><p class="timeline-tags">DELTAV · HMI · CONTROL VALIDATION</p></div></article>
+          <article class="timeline-item"><div class="timeline-when"><span>2024</span><small>MAY—AUG</small></div><div class="timeline-role"><p class="timeline-company">AMOMII <span>TAICHUNG, TAIWAN</span></p><h3>Product Development Intern</h3><ul><li>Programmed and documented Arduino modules, improving deployment scalability by 25%.</li><li>Coordinated design reviews in English and Mandarin to align stakeholder feedback with integration priorities.</li></ul><p class="timeline-tags">ARDUINO · PRODUCT DEVELOPMENT · BILINGUAL COORDINATION</p></div></article>
+          <article class="timeline-item"><div class="timeline-when"><span>2023</span><small>MAY—AUG</small></div><div class="timeline-role"><p class="timeline-company">ONNI GROUP <span>VANCOUVER, BC</span></p><h3>District Energy Engineering Intern</h3><ul><li>Evaluated renewable and low-carbon district-energy and HVAC systems for building design.</li><li>Coordinated mechanical requirements with developers, contractors, and consultants; supported performance validation.</li></ul><p class="timeline-tags">DISTRICT ENERGY · HVAC · SYSTEMS VALIDATION</p></div></article>
+          <article class="timeline-item"><div class="timeline-when"><span>2023</span><small>JAN—SEP</small></div><div class="timeline-role"><p class="timeline-company">UBC SUSTAINGINEERING <span>VANCOUVER, BC</span></p><h3>Mechanical Team Member</h3><ul><li>Worked on a five-person team building a small-scale wind turbine for energy-accessibility work.</li><li>Modeled turbine components, including ribs, base, and shaft, in SOLIDWORKS.</li></ul><p class="timeline-tags">SOLIDWORKS · CAD · TEAM DESIGN</p></div></article>
         </div>
       </section>
 
-      <section class="about section-wrap" id="about" aria-labelledby="about-title">
-        <div class="about-title"><p class="section-kicker">03 / ABOUT & TOOLKIT</p><h2 id="about-title">A manufacturing<br />engineer with a<br /><em>systems mindset.</em></h2></div>
-        <div class="about-details"><p class="about-lede">I’m Suanne Sparrow, a Manufacturing Engineering graduate from the University of British Columbia. My projects sit where hardware, software, and real-world constraints meet.</p><p>I’ve worked on embedded sensor systems, process simulation, operator interfaces, product development, and manufacturing process design. I enjoy moving between the detailed work—drivers, control logic, fixtures—and the bigger picture of how a system performs.</p>
-          <div class="education"><p class="section-kicker">EDUCATION</p><div><strong>University of British Columbia</strong><span>B.A.Sc., Manufacturing Engineering <b>2021—2026</b></span></div><div><strong>National University of Singapore</strong><span>Exchange, Mechanical Engineering · College of Design and Engineering <b>JAN—MAY 2025</b></span></div></div>
-        </div>
-        <div class="skills-grid"><div><h3>Embedded & software</h3><p>C · Python · C# · ESP-IDF · FreeRTOS · ARM Assembly · GitHub</p></div><div><h3>Controls & analysis</h3><p>DeltaV DCS · PLC ladder logic · PID tuning · MATLAB · Simulink · Ansys</p></div><div><h3>Design & manufacturing</h3><p>Siemens NX · SOLIDWORKS · CAM · 5-axis CNC · DFM · FEA</p></div><div><h3>Lab & languages</h3><p>SPI · I²C · Ethernet · Arduino · Oscilloscope · Multimeter<br />English (native) · Mandarin Chinese (native)</p></div></div>
+      <section class="contact section-anchor" id="contact" data-section="contact" aria-labelledby="contact-title">
+        <div class="contact-art" aria-hidden="true"><span>LET’S</span><i></i><span>CONNECT</span></div>
+        <div class="contact-content"><p class="section-kicker">05 / CONTACT</p><h2 id="contact-title">Let’s connect.</h2><p>Suanne Sparrow<br />Mechatronics Engineer · UBC Manufacturing Engineering ’26</p><a class="button button-dark" href="mailto:suannesparrow@gmail.com">Email me <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="mailto:suannesparrow@gmail.com">EMAIL <span>↗</span></a><a href="https://www.linkedin.com/in/suanne-sparrow-840819260/" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a><a href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a><a href="assets/documents/Suanne_Sparrow_UBC_Resume.pdf" target="_blank" rel="noreferrer">RÉSUMÉ <span>↗</span></a></div></div>
       </section>
-
-      <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-inner"><p class="section-kicker">04 / GET IN TOUCH</p><h2 id="contact-title">Let’s make<br /><em>something useful.</em></h2><p>For project conversations and professional opportunities, find me through GitHub.</p><a class="button button-light" href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a></div><div class="contact-orbit" aria-hidden="true"><span></span><span></span><i></i></div></section>
     </main>
-    <footer class="site-footer"><a class="wordmark" href="#top">SS<span>.</span></a><span>SUANNE SPARROW · VANCOUVER, BC</span><a href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">GITHUB ↗</a><span>© <span data-year>2026</span></span></footer>
+    <footer class="site-footer"><a class="wordmark" href="#home">SUANNE SPARROW<span>.</span></a><span>MECHATRONICS ENGINEER · UBC MANUFACTURING ENGINEERING ’26</span><span>© 2026 SUANNE SPARROW</span></footer>
+
+    <dialog class="project-dialog" id="project-wind" aria-labelledby="wind-title">
+      <div class="dialog-top"><span>PROJECT 01 / EMBEDDED SYSTEMS</span><button class="dialog-close" type="button" aria-label="Close project details">×</button></div><div class="dialog-body"><p class="section-kicker">CAPSTONE · FIRST-PLACE TEAM</p><h2 id="wind-title">Wind Turbine Structural Health Monitoring</h2><p class="dialog-lede">A low-cost structural-health-monitoring prototype for wind turbines in seismic-prone regions, integrating embedded MEMS sensing, wired data transmission, local storage, and remote visualization.</p><div class="dialog-facts"><div><b>MY CONTRIBUTION</b><p>Led embedded firmware development: sensor drivers, timer/interrupt sampling, lock-free ring buffers, ESP32 Ethernet bring-up, MQTT publishing, and sensor/network fault handling.</p></div><div><b>TECHNOLOGIES</b><p>C · ESP32 · ESP-IDF · FreeRTOS · ADXL355Z · SCL3300 · ADT7420 · Ethernet · MQTT</p></div></div><figure class="dialog-image"><img src="assets/shm-sensor-module.jpg" alt="ESP32 development board with ADXL355Z and SCL3300 MEMS sensor modules mounted on a perfboard" loading="lazy" /><figcaption>Sensor-node prototype assembled for multi-sensor vibration monitoring.</figcaption></figure><figure class="dialog-image"><img src="assets/shm-sensor-schematic.jpg" alt="Sensor-node schematic showing the ESP32 connections to the accelerometer, inclinometer, and temperature sensor" loading="lazy" /><figcaption>Schematic of the sensor-node interfaces.</figcaption></figure><div class="dialog-result"><strong>99.83% data integrity</strong><span>Seven-channel acquisition and fault propagation validated during a 24-hour run.</span></div><a class="pdf-link" href="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=2" target="_blank" rel="noreferrer">View full portfolio PDF · project page 2 <span>↗</span></a><details class="pdf-embed"><summary>Open PDF here <span>＋</span></summary><iframe data-pdf-src="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=2" title="Wind turbine monitoring project portfolio PDF page" loading="lazy"></iframe></details></div>
+    </dialog>
+    <dialog class="project-dialog" id="project-twin" aria-labelledby="twin-title">
+      <div class="dialog-top"><span>PROJECT 02 / CONTROLS & SIMULATION</span><button class="dialog-close" type="button" aria-label="Close project details">×</button></div><div class="dialog-body"><p class="section-kicker">SYSTEMS ENGINEERING INTERNSHIP · 2024</p><h2 id="twin-title">District Energy Digital Twin</h2><p class="dialog-lede">A sanitized overview of process simulation, operator-interface development, and control validation for a multi-building district-energy system.</p><div class="dialog-facts"><div><b>MY CONTRIBUTION</b><p>Built DeltaV simulation modules for equipment behavior; designed a four-level DeltaV Live HMI following ISA-101; reviewed control narratives and supported PID tuning and closed-loop validation.</p></div><div><b>TECHNOLOGIES</b><p>DeltaV DCS · DeltaV Live · HMI · ISA-101 · PID control · process simulation</p></div></div><div class="safe-diagram" role="img" aria-label="Illustrative process workflow, not an operational plant diagram"><p class="section-kicker">ILLUSTRATIVE WORKFLOW · NO PLANT DATA</p><div><span>MODEL PROCESS</span><i>→</i><span>SIMULATE</span><i>→</i><span>VALIDATE CONTROL</span><i>→</i><span>REFINE DESIGN</span></div></div><div class="dialog-result"><strong>Issue found before commissioning</strong><span>Simulation surfaced a pump recirculation issue; a variable-speed change was implemented to address it.</span></div><p class="safety-note">Client-identifying information, internal HMI screens, plant-specific data, and control diagrams are omitted.</p><a class="pdf-link" href="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=3" target="_blank" rel="noreferrer">View full portfolio PDF · project page 3 <span>↗</span></a><details class="pdf-embed"><summary>Open PDF here <span>＋</span></summary><iframe data-pdf-src="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=3" title="District energy project portfolio PDF page" loading="lazy"></iframe></details></div>
+    </dialog>
+    <dialog class="project-dialog" id="project-chassis" aria-labelledby="chassis-title">
+      <div class="dialog-top"><span>PROJECT 03 / MANUFACTURING & CAM</span><button class="dialog-close" type="button" aria-label="Close project details">×</button></div><div class="dialog-body"><p class="section-kicker">MANUFACTURING ENGINEERING PROJECT · 2025</p><h2 id="chassis-title">MacBook Pro Keyboard Chassis</h2><p class="dialog-lede">A CNC manufacturing process plan for a thin-wall aluminum keyboard chassis, from fixture strategy through two-sided 5-axis programming and in-process verification.</p><div class="dialog-facts"><div><b>MY CONTRIBUTION</b><p>Designed vacuum and mechanical workholding; selected tools and designed a custom T-cutter; calculated machine parameters; programmed and verified 30 operations across two setups; documented DFM changes for five unmanufacturable feature classes.</p></div><div><b>TECHNOLOGIES</b><p>Siemens NX · CAM · 5-axis CNC · DFM · fixture design · IPW verification</p></div></div><div class="dialog-gallery"><figure class="dialog-image"><img src="assets/chassis-fixture-bottom.jpg" alt="Bottom-side vacuum fixture for the keyboard chassis" loading="lazy" /><figcaption>Bottom setup · vacuum fixture.</figcaption></figure><figure class="dialog-image"><img src="assets/chassis-fixture-top.jpg" alt="Top-side chassis fixture with low-profile clamps and locating keys" loading="lazy" /><figcaption>Top setup · locating and clamping.</figcaption></figure><figure class="dialog-image"><img src="assets/chassis-cam-toolpath.png" alt="CAM toolpath around the chassis floor and walls" loading="lazy" /><figcaption>CAM operation path.</figcaption></figure><figure class="dialog-image"><img src="assets/chassis-finished-ipw.jpg" alt="Final in-process workpiece model after all programmed operations" loading="lazy" /><figcaption>Final in-process workpiece.</figcaption></figure></div><div class="dialog-result"><strong>±0.05 mm · 30 operations · 2 setups</strong><span>Reported tolerance; simulated IPW verified with no gouges or remaining stock.</span></div><p class="safety-note">Academic manufacturing project; no affiliation with Apple.</p><a class="pdf-link" href="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=4" target="_blank" rel="noreferrer">View full portfolio PDF · project page 4 <span>↗</span></a><details class="pdf-embed"><summary>Open PDF here <span>＋</span></summary><iframe data-pdf-src="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=4" title="Keyboard chassis project portfolio PDF page" loading="lazy"></iframe></details></div>
+    </dialog>
+    <dialog class="project-dialog" id="project-scale" aria-labelledby="scale-title">
+      <div class="dialog-top"><span>PROJECT 04 / INSTRUMENTATION & DAQ</span><button class="dialog-close" type="button" aria-label="Close project details">×</button></div><div class="dialog-body"><p class="section-kicker">MECH 368</p><h2 id="scale-title">Precision Strain-Gauge Weight Scale</h2><p class="dialog-lede">A complete signal chain from a load cell’s millivolt output through analog conditioning to a calibrated mass readout.</p><div class="dialog-facts"><div><b>MY CONTRIBUTION</b><p>Derived the instrumentation-amplifier output by nodal analysis; verified gain in Simulink; designed the offset stage; assembled the circuit; wrote a 100 Hz MATLAB acquisition loop and calibrated at 0 kg and 2 kg.</p></div><div><b>TECHNOLOGIES</b><p>Op-amp design · Simulink · MATLAB · Arduino · strain gauge · data acquisition</p></div></div><div class="dialog-gallery"><figure class="dialog-image"><img src="assets/scale-prototype.jpg" alt="Breadboard prototype of instrumentation and offset amplifier circuit" loading="lazy" /><figcaption>Physical amplifier circuit prototype.</figcaption></figure><figure class="dialog-image"><img src="assets/scale-simulink-model.png" alt="Simulink model used to verify the amplifier gain before the physical build" loading="lazy" /><figcaption>Gain verification in Simulink.</figcaption></figure></div><div class="dialog-result"><strong>Gain 210 · 100 Hz acquisition</strong><span>Output 0.62–2.41 V against a 0.5–2.5 V target; readout checked at 0 kg and 2 kg.</span></div><a class="pdf-link" href="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=5" target="_blank" rel="noreferrer">View full portfolio PDF · project page 5 <span>↗</span></a><details class="pdf-embed"><summary>Open PDF here <span>＋</span></summary><iframe data-pdf-src="assets/documents/Suanne_Sparrow_Engineering_Portfolio.pdf#page=5" title="Weight scale project portfolio PDF page" loading="lazy"></iframe></details></div>
+    </dialog>
   </body>
 </html>
