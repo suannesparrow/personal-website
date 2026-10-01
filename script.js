@@ -45,29 +45,36 @@ updateActiveSection();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const aboutVisual = document.querySelector(".about-visual");
 const slides = [...document.querySelectorAll(".about-slide")];
-const slideCount = document.querySelector(".slide-count");
 let slideIndex = 0;
 let slideTimer;
 function showSlide(index) {
-  slideIndex = index % slides.length;
-  slides.forEach((slide, i) => slide.classList.toggle("is-active", i === slideIndex));
-  if (slideCount) slideCount.textContent = `${String(slideIndex + 1).padStart(2, "0")} / ${String(slides.length).padStart(2, "0")}`;
+  if (!slides.length) return;
+  slideIndex = (index + slides.length) % slides.length;
+  slides.forEach((slide, i) => {
+    const active = i === slideIndex;
+    slide.classList.toggle("is-active", active);
+    slide.setAttribute("aria-hidden", String(!active));
+  });
 }
 function startSlideRotation() {
-  if (reducedMotion || slides.length < 2 || slideTimer) return;
+  if (reducedMotion || slides.length < 2 || slideTimer || document.hidden || aboutVisual?.matches(":hover") || aboutVisual?.contains(document.activeElement)) return;
   slideTimer = window.setInterval(() => showSlide(slideIndex + 1), 5000);
 }
 function stopSlideRotation() {
   window.clearInterval(slideTimer);
   slideTimer = undefined;
 }
-if (!reducedMotion && aboutVisual && slides.length > 1) {
-  aboutVisual.addEventListener("mouseenter", stopSlideRotation);
-  aboutVisual.addEventListener("mouseleave", startSlideRotation);
-  aboutVisual.addEventListener("focusin", stopSlideRotation);
-  aboutVisual.addEventListener("focusout", startSlideRotation);
-  document.addEventListener("visibilitychange", () => document.hidden ? stopSlideRotation() : startSlideRotation());
-  startSlideRotation();
+if (aboutVisual && slides.length > 1) {
+  aboutVisual.querySelector("[data-photo-previous]")?.addEventListener("click", () => showSlide(slideIndex - 1));
+  aboutVisual.querySelector("[data-photo-next]")?.addEventListener("click", () => showSlide(slideIndex + 1));
+  if (!reducedMotion) {
+    aboutVisual.addEventListener("mouseenter", stopSlideRotation);
+    aboutVisual.addEventListener("mouseleave", startSlideRotation);
+    aboutVisual.addEventListener("focusin", stopSlideRotation);
+    aboutVisual.addEventListener("focusout", startSlideRotation);
+    document.addEventListener("visibilitychange", () => document.hidden ? stopSlideRotation() : startSlideRotation());
+    startSlideRotation();
+  }
 }
 
 if (!reducedMotion && "IntersectionObserver" in window) {
