@@ -1,10 +1,10 @@
 # Suanne Sparrow — Engineering Portfolio
 
-A responsive, single-page engineering portfolio built with HTML, CSS, and a small amount of JavaScript. The page has five sections: intro, about and skills, technical projects, experience, and contact. The personal photo area is intentionally blank for a future update.
+A responsive, single-page engineering portfolio built with HTML, CSS, and a small amount of JavaScript. The page has five sections: intro, about and skills, technical projects, experience, and contact. The About visual rotates through genuine project images; the repository does not contain personal photos.
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the repository root with any static HTTP server. There is no build step. Google Fonts are optional; system fonts are used as fallbacks.
+Open `index.html` in a browser, or serve the repository root with any static HTTP server. There is no build step. IBM Plex Sans and IBM Plex Mono load from Google Fonts, with system fallbacks.
 
 ## Content and assets
 
