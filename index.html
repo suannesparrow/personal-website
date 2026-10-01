@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f1e9" />
+    <meta name="description" content="Suanne Sparrow is a UBC Manufacturing Engineering graduate working across embedded systems, controls, and manufacturing." />
+    <meta property="og:title" content="Suanne Sparrow — Engineering portfolio" />
+    <meta property="og:description" content="Selected engineering projects, experience, and skills." />
+    <meta property="og:type" content="website" />
+    <title>Suanne Sparrow — Engineering portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Suanne Sparrow home">SS<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact" class="nav-cta">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> MANUFACTURING ENGINEERING · UBC ’26</p>
+          <h1 id="hero-title">I build systems<br />that make ideas<br /><em>work in the real world.</em></h1>
+          <p class="hero-intro">From embedded sensing and process control to CNC manufacturing, I like turning complex engineering problems into systems you can test, understand, and improve.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↓</span></a><a class="quiet-link" href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">GitHub profile <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="hero-visual" aria-label="Embedded sensor prototype and engineering sketch">
+          <div class="visual-grid"></div>
+          <div class="hero-photo-wrap"><img src="assets/shm-sensor-module.jpg" alt="Prototype sensor node assembled on a perfboard with an ESP32 and MEMS sensor modules" fetchpriority="high" /></div>
+          <div class="visual-tag"><span>01 / 05</span><span>MEASURE → UNDERSTAND → IMPROVE</span></div>
+          <span class="visual-cross cross-one" aria-hidden="true">+</span><span class="visual-cross cross-two" aria-hidden="true">+</span>
+        </div>
+        <div class="hero-bottomline"><span>VANCOUVER, BC</span><span>EMBEDDED SYSTEMS · CONTROLS · MANUFACTURING</span><a href="#work" aria-label="Scroll to selected work">SCROLL TO EXPLORE ↓</a></div>
+      </section>
+
+      <section class="proof-strip" aria-label="Selected project outcomes">
+        <div><strong>99.83<span>%</span></strong><span>DATA INTEGRITY · 24-HOUR TEST</span></div>
+        <div><strong>±0.05<span> mm</span></strong><span>VERIFIED MACHINING TOLERANCE</span></div>
+        <div><strong>15<span>%</span></strong><span>RC VEHICLE WEIGHT REDUCTION</span></div>
+        <p>Evidence from selected academic and team projects.</p>
+      </section>
+
+      <section class="work section-wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading"><div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Projects built<br /><em>to be understood.</em></h2></div><p class="section-note">A selection across embedded systems,<br />controls, and manufacturing.</p></div>
+        <div class="project-grid">
+          <a class="project-card project-featured" href="projects/wind-turbine-monitoring/index.html">
+            <div class="project-image project-image-wind"><img src="assets/shm-sensor-module.jpg" alt="" loading="lazy" /><span class="image-index">CAPSTONE · 1ST PLACE</span></div>
+            <div class="project-meta"><span>01 / EMBEDDED SYSTEMS</span><span>2025—26</span></div>
+            <h3>Wind turbine<br />health monitoring</h3><p>Low-cost sensing, reliable acquisition, and IoT networking for structural health monitoring.</p>
+            <div class="project-tags"><span>C</span><span>ESP32</span><span>FreeRTOS</span><span>MQTT</span></div><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="projects/district-energy-digital-twin/index.html">
+            <div class="project-image project-image-twin" aria-hidden="true"><div class="diagram-loop"><i></i><i></i><i></i><i></i><b>MODEL<br />↻<br />VALIDATE</b></div><span class="image-index">SYSTEMS ENGINEERING</span></div>
+            <div class="project-meta"><span>02 / CONTROLS</span><span>2024</span></div>
+            <h3>District energy<br />digital twin</h3><p>Process simulation and operator interface development for a multi-building energy system.</p>
+            <div class="project-tags"><span>DeltaV</span><span>HMI</span><span>PID</span></div><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="projects/macbook-chassis/index.html">
+            <div class="project-image"><img src="assets/chassis-fixture-bottom.jpg" alt="" loading="lazy" /><span class="image-index">CAM · TWO SETUPS</span></div>
+            <div class="project-meta"><span>03 / MANUFACTURING</span><span>2025</span></div>
+            <h3>Keyboard chassis<br />CAM process</h3><p>Fixture strategy, 5-axis toolpaths, and DFM review for a thin-wall aluminum part.</p>
+            <div class="project-tags"><span>Siemens NX</span><span>5-axis CNC</span><span>DFM</span></div><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="projects/rc-vehicle/index.html">
+            <div class="project-image project-image-vehicle" aria-hidden="true"><svg viewBox="0 0 640 300" role="presentation"><path d="M111 201h420l-24-58-92-14-66-54H229l-60 61-48 22z"/><path d="M198 129h139l-42-39h-56zM353 129h47l-43-39h-33z"/><circle cx="211" cy="209" r="43"/><circle cx="211" cy="209" r="17"/><circle cx="448" cy="209" r="43"/><circle cx="448" cy="209" r="17"/><path d="M114 172h70m259-39 51 10"/></svg><span class="image-index">MATERIALS · DFMA</span></div>
+            <div class="project-meta"><span>04 / PRODUCT DEVELOPMENT</span><span>2023—24</span></div>
+            <h3>RC vehicle<br />performance</h3><p>Composite chassis redesign, material testing, and process planning for a lighter vehicle.</p>
+            <div class="project-tags"><span>GFRP</span><span>FEA</span><span>RTM</span></div><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <details class="more-projects"><summary><span>Also in the lab</span><span>Precision strain-gauge weight scale · 2024 <b aria-hidden="true">+</b></span></summary><div class="more-project-body"><img src="assets/scale-prototype.jpg" alt="Breadboard prototype of an instrumentation and offset amplifier circuit used for the strain-gauge weight scale" loading="lazy" /><div><p class="section-kicker">05 / INSTRUMENTATION</p><h3>Precision weight scale</h3><p>Designed and built an analog signal-conditioning chain for a strain gauge, verified the instrumentation-amplifier gain in Simulink, then calibrated a MATLAB data-acquisition readout at 0 kg and 2 kg.</p><p class="project-tags"><span>OP-AMP</span><span>SIMULINK</span><span>MATLAB · 100 HZ</span></p><a class="text-link" href="projects/strain-gauge-scale/index.html">View project details <span aria-hidden="true">↗</span></a></div></div></details>
+      </section>
+
+      <section class="experience section-wrap" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading"><div><p class="section-kicker">02 / EXPERIENCE</p><h2 id="experience-title">Where I’ve<br /><em>put it to work.</em></h2></div><p class="section-note">Engineering work across energy,<br />product development, and student teams.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><div class="timeline-date">SEP—DEC 2024 <span>VANCOUVER, BC</span></div><div class="timeline-content"><h3>Systems Engineering Intern <span>· Creative Energy</span></h3><ul><li>Built a DeltaV process simulator and a four-level operator HMI for a district-energy system.</li><li>Supported PID tuning and closed-loop validation; simulation surfaced a pump recirculation issue before commissioning.</li></ul><a href="projects/district-energy-digital-twin/index.html" class="text-link">Related case study <span aria-hidden="true">↗</span></a></div></article>
+          <article class="timeline-item"><div class="timeline-date">MAY—AUG 2024 <span>TAICHUNG, TAIWAN</span></div><div class="timeline-content"><h3>Product Development Intern <span>· Amomii</span></h3><ul><li>Programmed and documented Arduino modules, improving deployment scalability by 25%.</li><li>Used English and Mandarin to coordinate project reviews and turn stakeholder feedback into integration priorities.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">MAY—AUG 2023 <span>VANCOUVER, BC</span></div><div class="timeline-content"><h3>District Energy Engineering Intern <span>· Onni Group</span></h3><ul><li>Evaluated renewable and low-carbon district-energy and HVAC concepts for building design.</li><li>Coordinated mechanical requirements with developers, contractors, and consultants and supported performance validation.</li></ul></div></article>
+          <article class="timeline-item"><div class="timeline-date">JAN—SEP 2023 <span>VANCOUVER, BC</span></div><div class="timeline-content"><h3>Mechanical Team Member <span>· UBC Sustaingineering</span></h3><ul><li>Contributed to a five-person team building a small-scale wind turbine for energy-accessibility work.</li><li>Modeled structural components—including ribs, base, and shaft—in SOLIDWORKS.</li></ul></div></article>
+        </div>
+      </section>
+
+      <section class="about section-wrap" id="about" aria-labelledby="about-title">
+        <div class="about-title"><p class="section-kicker">03 / ABOUT & TOOLKIT</p><h2 id="about-title">A manufacturing<br />engineer with a<br /><em>systems mindset.</em></h2></div>
+        <div class="about-details"><p class="about-lede">I’m Suanne Sparrow, a Manufacturing Engineering graduate from the University of British Columbia. My projects sit where hardware, software, and real-world constraints meet.</p><p>I’ve worked on embedded sensor systems, process simulation, operator interfaces, product development, and manufacturing process design. I enjoy moving between the detailed work—drivers, control logic, fixtures—and the bigger picture of how a system performs.</p>
+          <div class="education"><p class="section-kicker">EDUCATION</p><div><strong>University of British Columbia</strong><span>B.A.Sc., Manufacturing Engineering <b>2021—2026</b></span></div><div><strong>National University of Singapore</strong><span>Exchange, Mechanical Engineering · College of Design and Engineering <b>JAN—MAY 2025</b></span></div></div>
+        </div>
+        <div class="skills-grid"><div><h3>Embedded & software</h3><p>C · Python · C# · ESP-IDF · FreeRTOS · ARM Assembly · GitHub</p></div><div><h3>Controls & analysis</h3><p>DeltaV DCS · PLC ladder logic · PID tuning · MATLAB · Simulink · Ansys</p></div><div><h3>Design & manufacturing</h3><p>Siemens NX · SOLIDWORKS · CAM · 5-axis CNC · DFM · FEA</p></div><div><h3>Lab & languages</h3><p>SPI · I²C · Ethernet · Arduino · Oscilloscope · Multimeter<br />English (native) · Mandarin Chinese (native)</p></div></div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-inner"><p class="section-kicker">04 / GET IN TOUCH</p><h2 id="contact-title">Let’s make<br /><em>something useful.</em></h2><p>For project conversations and professional opportunities, find me through GitHub.</p><a class="button button-light" href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a></div><div class="contact-orbit" aria-hidden="true"><span></span><span></span><i></i></div></section>
+    </main>
+    <footer class="site-footer"><a class="wordmark" href="#top">SS<span>.</span></a><span>SUANNE SPARROW · VANCOUVER, BC</span><a href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">GITHUB ↗</a><span>© <span data-year>2026</span></span></footer>
+  </body>
+</html>

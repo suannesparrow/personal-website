@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="theme-color" content="#f3f1e9" />
+    <meta name="description" content="A strain-gauge weight scale with op-amp signal conditioning, Simulink verification, and a 100 Hz MATLAB data acquisition loop." />
+    <title>Precision Weight Scale — Suanne Sparrow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><a class="wordmark" href="../../index.html" aria-label="Suanne Sparrow home">SS<span>.</span></a><nav aria-label="Main navigation"><a href="../../index.html#work">Work</a><a href="../../index.html#experience">Experience</a><a href="../../index.html#about">About</a><a href="../../index.html#contact" class="nav-cta">Contact <span aria-hidden="true">↗</span></a></nav></header>
+    <main id="main">
+      <header class="case-header"><a class="case-breadcrumb" href="../../index.html#work">← ALL PROJECTS</a><p class="case-kicker">05 / INSTRUMENTATION · ANALOG DESIGN · DATA ACQUISITION</p><h1>Precision strain-gauge<br /><em>weight scale.</em></h1><p class="case-lede">A complete signal chain from a millivolt-level load-cell output to a calibrated mass readout, combining op-amp design, simulation, a breadboard prototype, and MATLAB acquisition.</p><div class="case-metadata"><span><b>PROJECT</b>MECH 368</span><span><b>MY ROLE</b>Circuit design · verification · DAQ</span><span><b>ACQUISITION</b>100 Hz MATLAB loop</span></div></header>
+      <div class="case-layout"><article class="case-body">
+        <section><p class="section-kicker">THE SIGNAL CHAIN</p><h2>Condition, measure, calibrate.</h2><p>The load cell produced a small signal that needed amplification and offset before the Arduino ADC could read it. I designed the instrumentation and offset stages, verified gain in Simulink, then calibrated the MATLAB readout at two known loads.</p><div class="process-flow" aria-label="Signal chain from load cell to MATLAB"><div><span>01</span><strong>Load cell</strong></div><div><span>02</span><strong>Instr. amp · ×210</strong></div><div><span>03</span><strong>Offset stage · ×4</strong></div><div><span>04</span><strong>Arduino ADC → MATLAB</strong></div></div></section>
+        <figure class="case-image"><img src="../../assets/scale-prototype.jpg" alt="Breadboard prototype of the instrumentation and offset amplifier circuit with connected measurement hardware." loading="lazy" /><figcaption>Assembled instrumentation and offset-amplifier circuit.</figcaption></figure>
+        <section><p class="section-kicker">DESIGN & VERIFICATION</p><h2>Check the gain before building the circuit.</h2><ul><li>Derived the instrumentation-amplifier output using nodal analysis.</li><li>Modeled the circuit in Simulink and confirmed the expected output of 1.45 V and gain of 210 before hardware assembly.</li><li>Solved the offset-amplifier resistor values to scale the signal into the Arduino ADC range.</li><li>Implemented a 100 Hz MATLAB acquisition loop and calibrated the mass readout against 0 kg and 2 kg references.</li></ul></section>
+        <figure class="case-image"><img src="../../assets/scale-simulink-model.png" alt="Simulink model of the instrumentation and offset amplifier circuit used to verify gain before building the hardware." loading="lazy" /><figcaption>Simulation model used to verify the instrumentation-amplifier gain before the physical build.</figcaption></figure>
+        <section><p class="section-kicker">RESULT</p><h2>Validated the readout at two reference loads.</h2><p>The measured gain was 210. The output spanned 0.62–2.41 V against a 0.5–2.5 V target range, and the mass readout was validated at 0 kg and 2 kg. The remaining difference from the target range was attributed to standard-value resistor substitutions.</p><div class="case-highlight"><strong>100 Hz acquisition · 0 kg and 2 kg checks</strong><p>Reported hardware and calibration checks.</p></div></section>
+        <a class="case-next" href="../../index.html#work"><span>BACK TO PROJECTS</span><span>ALL SELECTED WORK ↑</span></a>
+      </article><aside class="case-aside"><h2>At a glance</h2><dl><dt>Focus</dt><dd>Analog signal conditioning, simulation, data acquisition</dd><dt>Tools</dt><dd>Op-amps · Simulink · MATLAB · Arduino</dd><dt>Instrumentation gain</dt><dd>210</dd><dt>Readout rate</dt><dd>100 Hz</dd><dt>Validation</dt><dd>Calibrated at 0 kg and 2 kg reference loads</dd></dl></aside></div>
+    </main>
+    <footer class="site-footer"><a class="wordmark" href="../../index.html">SS<span>.</span></a><span>SUANNE SPARROW · VANCOUVER, BC</span><a href="https://github.com/suannesparrow" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="../../index.html#work">ALL WORK ↑</a></footer>
+  </body>
+</html>
