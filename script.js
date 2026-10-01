@@ -58,7 +58,7 @@ function showSlide(index) {
 }
 function startSlideRotation() {
   if (reducedMotion || slides.length < 2 || slideTimer || document.hidden || aboutVisual?.matches(":hover") || aboutVisual?.contains(document.activeElement)) return;
-  slideTimer = window.setInterval(() => showSlide(slideIndex + 1), 4000);
+  slideTimer = window.setInterval(() => showSlide(slideIndex + 1), 5000);
 }
 function stopSlideRotation() {
   window.clearInterval(slideTimer);
