@@ -45,8 +45,12 @@ updateActiveSection();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const aboutVisual = document.querySelector(".about-visual");
 const slides = [...document.querySelectorAll(".about-slide")];
+const photoToggle = aboutVisual?.querySelector("[data-photo-toggle]");
+const photoToggleLabel = photoToggle?.querySelector("[data-photo-toggle-label]");
+const photoToggleIcon = photoToggle?.querySelector(".photo-toggle-icon");
 let slideIndex = 0;
 let slideTimer;
+let rotationPaused = reducedMotion;
 function showSlide(index) {
   if (!slides.length) return;
   slideIndex = (index + slides.length) % slides.length;
@@ -56,8 +60,8 @@ function showSlide(index) {
     slide.setAttribute("aria-hidden", String(!active));
   });
 }
-function startSlideRotation() {
-  if (reducedMotion || slides.length < 2 || slideTimer || document.hidden || aboutVisual?.matches(":hover") || aboutVisual?.contains(document.activeElement)) return;
+function startSlideRotation(userInitiated = false) {
+  if (rotationPaused || slides.length < 2 || slideTimer || document.hidden || (!userInitiated && (aboutVisual?.matches(":hover") || aboutVisual?.contains(document.activeElement)))) return;
   slideTimer = window.setInterval(() => showSlide(slideIndex + 1), 5000);
 }
 function stopSlideRotation() {
@@ -67,12 +71,27 @@ function stopSlideRotation() {
 if (aboutVisual && slides.length > 1) {
   aboutVisual.querySelector("[data-photo-previous]")?.addEventListener("click", () => showSlide(slideIndex - 1));
   aboutVisual.querySelector("[data-photo-next]")?.addEventListener("click", () => showSlide(slideIndex + 1));
+  const syncPhotoToggle = () => {
+    const label = rotationPaused ? "Play" : "Pause";
+    if (photoToggleLabel) photoToggleLabel.textContent = label;
+    if (photoToggleIcon) photoToggleIcon.textContent = rotationPaused ? "▶" : "Ⅱ";
+    photoToggle?.setAttribute("aria-label", `${label} photo rotation`);
+  };
+  syncPhotoToggle();
+  photoToggle?.addEventListener("click", () => {
+    rotationPaused = !rotationPaused;
+    if (rotationPaused) stopSlideRotation();
+    else startSlideRotation(true);
+    syncPhotoToggle();
+  });
+  aboutVisual.addEventListener("mouseenter", stopSlideRotation);
+  aboutVisual.addEventListener("mouseleave", startSlideRotation);
+  aboutVisual.addEventListener("focusin", stopSlideRotation);
+  aboutVisual.addEventListener("focusout", startSlideRotation);
+  document.addEventListener("visibilitychange", () => document.hidden ? stopSlideRotation() : startSlideRotation());
   if (!reducedMotion) {
-    aboutVisual.addEventListener("mouseenter", stopSlideRotation);
-    aboutVisual.addEventListener("mouseleave", startSlideRotation);
-    aboutVisual.addEventListener("focusin", stopSlideRotation);
-    aboutVisual.addEventListener("focusout", startSlideRotation);
-    document.addEventListener("visibilitychange", () => document.hidden ? stopSlideRotation() : startSlideRotation());
+    rotationPaused = false;
+    syncPhotoToggle();
     startSlideRotation();
   }
 }
