@@ -45,6 +45,7 @@ updateActiveSection();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const aboutVisual = document.querySelector(".about-visual");
 const slides = [...document.querySelectorAll(".about-slide")];
+const photoCount = aboutVisual?.querySelector("[data-photo-count]");
 const photoToggle = aboutVisual?.querySelector("[data-photo-toggle]");
 const photoToggleLabel = photoToggle?.querySelector("[data-photo-toggle-label]");
 const photoToggleIcon = photoToggle?.querySelector(".photo-toggle-icon");
@@ -59,6 +60,7 @@ function showSlide(index) {
     slide.classList.toggle("is-active", active);
     slide.setAttribute("aria-hidden", String(!active));
   });
+  if (photoCount) photoCount.textContent = `${slideIndex + 1} / ${slides.length}`;
 }
 function startSlideRotation(userInitiated = false) {
   if (rotationPaused || slides.length < 2 || slideTimer || document.hidden || (!userInitiated && (aboutVisual?.matches(":hover") || aboutVisual?.contains(document.activeElement)))) return;
