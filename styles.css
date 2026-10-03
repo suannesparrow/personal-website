@@ -114,12 +114,13 @@ h1, h2, h3, p { margin-top: 0; }
 .experience { padding-bottom: 112px; }
 .experience-heading { padding-bottom: 28px; }
 .timeline { border-top: 0; }
-.timeline-item { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 4vw; padding: 29px 0 31px; border-bottom: 1px solid var(--border); }
-.timeline-when { display: flex; flex-direction: column; color: var(--pink-dark); font-size: 14px; font-weight: 500; }
-.timeline-when small { margin-top: 3px; color: var(--text-muted); font-size: 11px; }
-.timeline-company { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin: 0 0 5px; color: var(--pink-dark); font-size: 12px; font-weight: 500; }
+.timeline-item { padding: 29px 0 31px; border-bottom: 1px solid var(--border); }
+.timeline-head, .timeline-company { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.timeline-head { margin-bottom: 3px; }
+.timeline-when { flex: 0 0 auto; color: var(--text-muted); font-size: 13px; text-align: right; white-space: nowrap; }
+.timeline-company { margin: 0 0 9px; color: var(--pink-dark); font-size: 12px; font-weight: 500; }
 .timeline-company span { color: var(--text-muted); }
-.timeline-role h3 { margin: 0 0 8px; font-size: 23px; font-weight: 500; }
+.timeline-role h3 { margin: 0; font-size: 23px; font-weight: 500; }
 .timeline-role ul { margin: 0; padding-left: 19px; color: var(--text-muted); font-size: 15px; line-height: 1.75; }
 .timeline-role li { padding-left: 3px; }
 .timeline-tags { margin: 11px 0 0; color: var(--pink-dark); font-size: 11px; }
@@ -220,10 +221,10 @@ h1, h2, h3, p { margin-top: 0; }
   .project-content h3 { min-height: 2em; font-size: 22px; }
   .project-content > p:not(.project-meta) { min-height: 2.6em; font-size: 13px; }
   .project-meta { font-size: 10px; }
-  .timeline-item { grid-template-columns: 78px minmax(0, 1fr); gap: 18px; padding: 22px 0 24px; }
-  .timeline-when { font-size: 12px; }
-  .timeline-when small { font-size: 9px; }
-  .timeline-company { flex-direction: column; gap: 1px; font-size: 11px; }
+  .timeline-item { padding: 22px 0 24px; }
+  .timeline-head, .timeline-company { gap: 10px; }
+  .timeline-when { font-size: 11px; }
+  .timeline-company { font-size: 11px; }
   .timeline-company span { font-size: 10px; }
   .timeline-role h3 { font-size: 21px; }
   .timeline-role ul { font-size: 14px; }
