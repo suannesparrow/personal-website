@@ -112,7 +112,7 @@ h1, h2, h3, p { margin-top: 0; }
 .project-open span { color: var(--pink-dark); font-size: 18px; transition: transform .18s ease; }
 .project-open:hover span { transform: translate(3px, -3px); }
 .experience { padding-bottom: 112px; }
-.experience-heading { padding-bottom: 28px; }
+.experience-heading { padding-bottom: 14px; }
 .timeline { border-top: 0; }
 .timeline-item { padding: 29px 0 31px; border-bottom: 1px solid var(--border); }
 .timeline-head, .timeline-company { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
