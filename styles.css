@@ -86,7 +86,7 @@ h1, h2, h3, p { margin-top: 0; }
 .photo-toggle-icon { font-family: var(--sans); font-size: 13px; line-height: 1; }
 .about-photo-count { position: absolute; z-index: 2; top: 12px; left: 12px; padding: 7px 9px; color: var(--text); background: #fffdf0e8; font: 10px var(--mono); letter-spacing: .035em; }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
-.skill-tags { margin-top: 14px; }
+.skill-tags { margin-top: 24px; }
 .skill-tags li { padding: 5px 11px; border: 1px solid var(--pink-border); border-radius: 999px; color: #463d40; background: #fffdfc; font-size: 13px; transition: color .18s ease, border-color .18s ease, background .18s ease, transform .18s ease; }
 .skill-tags li:hover { transform: translateY(-2px); border-color: var(--pink-dark); color: var(--pink-dark); background: var(--pink-soft); }
 .projects { padding-top: 18px; padding-bottom: 20px; background: #f3efed; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
