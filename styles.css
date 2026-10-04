@@ -105,7 +105,7 @@ h1, h2, h3, p { margin-top: 0; }
 .project-meta { width: 100%; display: flex; justify-content: space-between; gap: 10px; margin: 0 0 13px; color: var(--pink-dark); font-size: 10px; font-weight: 500; }
 .project-meta strong { font-weight: 600; letter-spacing: .085em; }
 .project-meta span { flex: none; color: var(--text-muted); }
-.project-content h3 { margin: 0 0 2px; font-size: clamp(20px, 1.85vw, 25px); font-weight: 500; line-height: 1.1; letter-spacing: -.035em; }
+.project-content h3 { margin: 0 0 5px; font-size: clamp(20px, 1.85vw, 25px); font-weight: 500; line-height: 1.1; letter-spacing: -.035em; }
 .project-content > p:not(.project-meta) { min-height: 2.6em; margin-bottom: 8px; color: var(--text-muted); font-size: 13px; line-height: 1.4; }
 .project-content > p.project-tools { min-height: 0; margin: 0 0 8px; color: var(--text-muted); font-size: 11px; line-height: 1.45; }
 .project-tools strong { margin-right: 5px; color: var(--pink-dark); font-family: var(--mono); font-size: 10px; font-weight: 600; letter-spacing: .085em; }
