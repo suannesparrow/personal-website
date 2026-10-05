@@ -125,7 +125,8 @@ h1, h2, h3, p { margin-top: 0; }
 .timeline-role h3 { margin: 0; font-size: 23px; font-weight: 500; }
 .timeline-role ul { margin: 0; padding-left: 19px; color: var(--text-muted); font-size: 15px; line-height: 1.75; }
 .timeline-role li { padding-left: 3px; }
-.timeline-tags { margin: 11px 0 0; color: var(--pink-dark); font-size: 11px; font-weight: 600; letter-spacing: .085em; }
+.timeline-role .experience-skills { margin-top: 11px; gap: 5px; }
+.timeline-role .experience-skills li { padding: 3px 8px; font-size: 11px; }
 .contact { display: flex; align-items: center; justify-content: center; min-height: 450px; padding: 80px max(8vw, calc((100vw - var(--content-width)) / 2)); color: white; background: var(--deep); text-align: center; }
 .contact .section-kicker, .contact .section-label { color: var(--pink-light-on-dark); }
 .contact-content { width: min(100%, 760px); }
@@ -231,7 +232,6 @@ h1, h2, h3, p { margin-top: 0; }
   .timeline-company span { font-size: 10px; }
   .timeline-role h3 { font-size: 21px; }
   .timeline-role ul { font-size: 14px; }
-  .timeline-tags { font-size: 10px; }
   .contact { min-height: 0; padding: 72px 7vw 68px; }
   .contact-intro { font-size: 15px; }
   .contact-links { gap: 14px 21px; }
